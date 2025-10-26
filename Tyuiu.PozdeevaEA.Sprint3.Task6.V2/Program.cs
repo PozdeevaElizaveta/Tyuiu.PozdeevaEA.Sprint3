@@ -1,4 +1,4 @@
-﻿using Tyuiu.PozdeevaEA.Sprint3.Task5.V28.Lib;
+﻿using Tyuiu.PozdeevaEA.Sprint3.Task6.V2.Lib;
 internal class Program
 {
     private static void Main(string[] args)
@@ -10,38 +10,30 @@ internal class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* Спринт #3                                                               *");
         Console.WriteLine("* Тема: Оператор цикла for                                                *");
-        Console.WriteLine("* Задание #5                                                              *");
-        Console.WriteLine("* Вариант #28                                                             *");
+        Console.WriteLine("* Задание #6                                                              *");
+        Console.WriteLine("* Вариант #2                                                              *");
         Console.WriteLine("* Выполнил: Поздеева Елизавета Александровна | ПКТб-25-1                  *");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* УСЛОВИЕ:                                                                *");
-        Console.WriteLine("*                     x                                                   *");
-        Console.WriteLine("*      3    12       k                                                    *");
-        Console.WriteLine("* y = summ summ  (------)        при x = 2                                *");
-        Console.WriteLine("*      i=1  k=1   sin(k)                                                  *");
+        Console.WriteLine("* Напишите программу, которая ищет среди целых чисел, принадлежащих       *");
+        Console.WriteLine("* числовому отрезку [12, 18] количество всех делителей                    *");
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
-        int x = 2;
-        int startValue1 = 1;
-        int stopValue1 = 3;
-        int startValue2 = 1;
-        int stopValue2 = 12;
+        int startValue = 12;
+        int stopValue = 18;
 
-        Console.WriteLine("Переменная X = " + x);
-        Console.WriteLine("Старт шага первой суммы ряда = " + startValue1);
-        Console.WriteLine("Конец шага первой суммы ряда = " + stopValue1);
-        Console.WriteLine("Старт шага второй суммы ряда = " + startValue2);
-        Console.WriteLine("Конец шага второй суммы ряда = " + stopValue2);
+        Console.WriteLine("Начало отрезка = " + startValue);
+        Console.WriteLine("Конец отрезка = " + stopValue);
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
 
-        Console.WriteLine("Сумма сумм ряда = " + ds.GetSumSumSeries(x, startValue1, startValue2, stopValue1, stopValue2));
+        Console.WriteLine("Количество делителей = " + ds.GetSumTheDivisors(startValue, stopValue));
 
 
         Console.ReadKey();
