@@ -12,7 +12,7 @@ namespace Tyuiu.PozdeevaEA.Sprint3.Task3.V15.Test
             string value = "lrmmse mg sermmmrt";
             char m = 'm';
             int res = ds.GetMinCharCount(value, m);
-            int wait = 2;
+            int wait = 1;
             Assert.AreEqual(res, wait);
         }
     }

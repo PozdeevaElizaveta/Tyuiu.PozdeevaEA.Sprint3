@@ -15,7 +15,7 @@ namespace Tyuiu.PozdeevaEA.Sprint3.Task3.V15.Lib
                 }
                 else
                 {
-                    if (countM >= 2 && countM < minCount)
+                    if (countM >0 && countM < minCount)
                     {
                         minCount = countM;
                     }
